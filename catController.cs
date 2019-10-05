@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,6 +44,10 @@ public class catController : MonoBehaviour
         {
             anim.SetInteger("State", 0);
             musicSource.Stop();
+        }
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
         }
     }
 }
